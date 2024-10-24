@@ -1,0 +1,121 @@
+body{
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+u{
+   color: orangered;
+}
+h1{
+   /* text-decoration: underline; */
+   font-size: 40px;
+}
+h3{
+   font-size: 20px;
+}
+
+.contanir{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.bill-contanir{
+   text-align: start;
+   background-color: #fff;
+   padding: 20px 30px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.bill-item{
+   margin: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* align-items: center; */
+}
+.bill-item input:hover{
+   background-color: rgb(201, 195, 195);
+}
+.bill-item input{
+   width: 400px;
+   height: 5vh;
+   padding: 5px 15px;
+   font-size: 16px;
+   outline: none;
+   border: none;
+   background-color: lightgrey;
+   border-bottom: 1px solid #000;
+}
+.bill-contanir h1{
+   color: orangered;
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bill-item label{
+   font-weight: bold;
+   font-size: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-bottom: 5px;
+}
+.btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 10px;
+   /* margin-bottom: 20px; */
+   border-bottom: 1px solid #000;
+}
+.btn button{
+   width: 420px;
+   padding: 10px 25px;
+   font-size: 25px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   margin-bottom: 10px;
+   background-color: gray;
+   color: #fff;
+   margin-bottom: 10px;
+}
+@media(max-width: 500px){
+   .bill-contanir{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .bill-item input{
+      width: 350px;
+      /* font-size: 12px; */
+   }
+   .btn button{
+      width: 350px;
+      font-size: 20px;
+   }
+}
+@media(max-width: 400px){
+   .bill-contanir{
+      padding: 10px 20px;
+   }
+   .bill-item input{
+      width: 300px;
+      font-size: 12px;
+      height: 4vh;
+   }
+   .bill-item label{
+      font-size: 17px;
+   }
+   .btn button{
+      width: 300px;
+   }
+}
+
+#result-bill{
+   font-size: 19px;
+   margin-top: 10px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   /* justify-content: start;
+   align-items: center; */
+   gap: 10px;
+}
